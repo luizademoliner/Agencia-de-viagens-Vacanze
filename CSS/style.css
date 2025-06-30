@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Tagesschrift&display=swap');
+
+body {
+    margin: 0;
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#topo{
+     position: relative;
+     width: 100%;
+     height: 60vh; /* controla a altura do banner */
+     overflow: hidden; /* esconde o que ultrapassar */
+     background-image: url(../Imagens/BannerVacanze.png);
+     background-size: cover;         /* faz a imagem preencher sem distorcer */
+     background-position: center;    /* centraliza a imagem */
+     background-repeat: no-repeat;   /* evita repetição */
+}
+
+#menu {
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    background-color: #0c7d74 ;
+    margin-top: 15px;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+#menu a{
+    font-family: "Bebas Neue", sans-serif;
+    font-size:x-large;
+    color: rgb(248, 241, 241) ;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    font-family: "Bebas Neue", sans-serif;
+    font-size:x-large;
+    color: rgb(201, 193, 193) ;
+    text-decoration: none;
+}
+
+#link1 {
+    margin-top: 25px;
+    height: 15vh;
+    margin-left: 290px;
+    float: left;
+}
+
+#link2 {
+    margin-top: 25px;
+    height: 15vh;
+    margin-left: 270px;
+    float: left;
+}
+
+#link3 {
+    margin-top: 25px;
+    height: 15vh;
+    margin-left: 300px;
+    float: left;
+}
+
+#conteudo{
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*Conteúdo*/
+#apresentacao{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 80px 100px;
+    border: 5px solid #0c7d74;
+    border-radius: 30px;
+    text-align: justify;
+    line-height: 1.6;
+    background-color:white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    font-family: "Comfortaa", sans-serif;
+}
+
+
+#apresentacao h1{
+    text-align: center;
+    color: #006666;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#apresentacao{
+    font-size: 1.1em;
+    color: black;
+}
+
+/*Conteúdo - accordions*/
+
+.ui-accordion-header{ /*Ajustes no botao do accordion :)*/
+    background-color: #008080 !important; /* Eu adicionei esse "!important" porque, pelo o que eu vi, como eu instalei o jQuery com um tema já escolhido, ele precisa disso para não dar preferêcia para o tema padrão*/
+    color: white !important;
+    font-family: "Comfortaa", sans-serif !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    margin-top: 10px !important;
+}
+
+.ui-accordion-header-active {
+  background-color: #006666 !important;
+  color: #fff !important;
+}
+
+.ui-accordion-content {
+  background-color: #dbefe1 !important;
+  color: #333 !important;
+  padding: 20px !important;
+  border: 1px solid #ccc !important;
+  border-top: none !important;
+  border-radius: 0 0 10px 10px !important;
+  
+}
+
+.ui-accordion-content {
+  font-family: "Comfortaa", sans-serif !important;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+#accordion1, #accordion2, #accordion3 {
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/*Conteúdo - serviços(também tem accordion)*/
+#servicos h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Comfortaa", sans-serif;
+    color: #006666;
+
+}
+
+/*Conteúdo - feedback(Decidi fazer com tabs)*/
+#feedback{
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    padding: 30px;
+    background-color: #006666;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    border-radius: 15px;
+}
+
+#feedback h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Comfortaa", sans-serif;
+    color:white;
+}
+
+/*Confugurações das tabs*/
+.ui-tabs{
+    max-width: 900px;
+    padding: 30px !important;
+    background-color: white !important;
+    border-radius: 15px !important;
+    border: solid white !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    margin: 0 auto !important;
+
+}
+
+.ui-tabs-nav{
+    padding: 0 !important;
+    background-color: #cee0e2 !important;
+    border-radius: 10px 10px 0 0 !important;
+    overflow: hidden !important;
+}
+
+.ui-tabs-nav li {
+  list-style: none !important;
+  float: left !important;
+  margin: 0 !important;
+}
+
+.ui-tabs-nav li a {
+  display: block !important;
+  padding: 10px 20px!important ;
+  background-color: #006666 !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-family: "Comfortaa", sans-serif !important;
+  font-size: 1.1em !important;
+}
+
+.ui-tabs-nav li.ui-tabs-active a {
+  background-color: #034e4e !important;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid whitesmoke !important;
+}
+
+
+.ui-tabs-panel {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: none;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.1em;
+  border-radius: 0 0 10px 10px;
+}
+/*Conteúdo - Promoção(com o efeito de exibir/ocultar)*/
+#promocao {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+}
+
+#promocao button {
+    background-color: #0c7d74;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#promocao button:hover {
+    background-color: #006666;
+}
+
+#conteudoPromo {
+    margin-top: 30px;
+    background-color: #f0fdfd;
+    border: 2px solid #0c7d74;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+#conteudoPromo h3 {
+    color: #006666;
+    font-size: 1.5em;
+}
+
+#conteudoPromo p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#imgPromo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+/*Conteúdo - formulario*/
+#formulario {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: "Comfortaa", sans-serif;
+}
+
+#formulario h2 {
+    text-align: center;
+    color: #006666;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#formulario label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+#formulario input,
+#formulario select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1em;
+}
+
+#formulario button {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 30px;
+    background-color: #0c7d74;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formulario button:hover {
+    background-color: #006666;
+}
+
+#perguntasFrequentes h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Comfortaa", sans-serif;
+    color: #006666;
+}
+
+#rodape {
+  background-color: #0c7d74;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 0.95em;
+  margin-top: 100px;
+  border-radius: 30px 30px 0 0;
+}
+
+
